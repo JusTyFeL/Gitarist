@@ -63,6 +63,9 @@ html
         color: #010101
         &:last-child
             margin-right: 0px
+        a
+            text-decoration: none
+            color: black   
 .left-wrapper
     position: relative
     &__img
@@ -108,7 +111,7 @@ html
     position: absolute
     top: 150px
     right: 76px
-    z-index: 1
+    z-index: 6
     &__icons-box
         margin-bottom: 1px
         padding-left: 10px
@@ -188,6 +191,7 @@ html
 
 
 .second-section
+    overflow: hidden
     min-height: 700px
     &__container
         padding-top: 32px
@@ -196,6 +200,7 @@ html
         margin-bottom: 40px
     &__card-box
         display: inline-flex
+        justify-content: center
         margin-bottom: 25px
     &__card-item
         margin-right: 30px
@@ -307,3 +312,78 @@ html
         justify-content: flex-end
     &__title
         margin-bottom: 20px
+
+
+
+@media (max-width: 1199px)
+    .container
+        width: 960px
+    .main-section
+        min-height: 690px
+    .left-wrapper
+        &__img
+            width: 750px
+        &__rectangel-blue
+            width: 500px
+            height: 200px
+        &__rectangel-orange
+            width: 550px
+            height: 200px
+        &__rectangel-grey
+            width: 500px
+            height: 200px
+    .right-wrapper
+        right: 20px
+    .main-section__first-elipse
+        right: 10px
+    .main-section__second-elipse
+        top: 600px
+    .second-section
+        min-height: 600px
+    .second-section__card-box
+        display: flex
+        justify-content: center
+    .card-item
+        width: 300px
+        height: 300px
+        margin-right: 20px
+        &__img
+            height: 275px
+        &__text
+            font-size: 30px
+            top: 120px
+    .icons-item__img
+        margin-right: 10px
+    .icons-item__text
+        font-size: 15px
+        span
+            font-size: 30px
+
+    .third-section__container
+        padding-left: 40px
+    .third-section__right-wrapper
+        max-width: 450px
+
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+    .left-wrapper
+        &__img
+            width: 600px
+        &__rectangel-blue
+            width: 400px
+            height: 150px
+        &__rectangel-orange
+            width: 450px
+            height: 155px
+        &__rectangel-grey
+            width: 450px
+            height: 150px
+@media (max-width: 767px)
+    .container
+        width: 540px
+
+@media (max-width: 575px)
+    .container
+        width: 100%
